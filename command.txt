@@ -1,0 +1,10 @@
+ng new negativacao-app
+ng add @nguniversal/express-engine
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/aaanm1309-1/negativacao-app.git
+git push -u origin main
+
+ng add @angular/material
