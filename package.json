@@ -27,8 +27,13 @@
     "@angular/platform-server": "~11.2.13",
     "@angular/router": "~11.2.13",
     "@nguniversal/express-engine": "^11.2.1",
+    "@types/cors": "^2.8.10",
+    "aws-serverless-express": "^3.4.0",
+    "cors": "^2.8.5",
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
+    "serverless": "^2.40.0",
+    "serverless-apigw-binary": "^0.4.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
