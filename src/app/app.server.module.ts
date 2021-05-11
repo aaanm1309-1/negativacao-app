@@ -8,6 +8,7 @@ import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NegativarService } from './negativar.service';
+import { ClientesService } from './clientes.service';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { NegativarService } from './negativar.service';
     MatButtonModule,
     BrowserAnimationsModule
   ],
-  providers: [NegativarService],
+  providers: [NegativarService,
+  ClientesService],
   bootstrap: [AppComponent],
 })
 export class AppServerModule {}

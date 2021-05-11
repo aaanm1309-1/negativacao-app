@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NegativarService } from './negativar.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientesService } from './clientes.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule
   ],
   providers: [
-    NegativarService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cliente } from './cliente';
+import { ClientesService } from './clientes.service';
 import { NegativarService } from './negativar.service';
 
 @Component({
@@ -11,23 +12,24 @@ export class AppComponent {
   title = 'negativacao-app';
   clientes: Cliente[] = [];
 
-  constructor(private service: NegativarService) {}
+  constructor(private service: NegativarService,
+     private serviceClientes: ClientesService) {}
 
   negativar(){
     this.service
       .negativar()
       .subscribe(response => {
          this.clientes = response;
-         console.log(response);
+        //  console.log(response);
       });
   }
 
   listar(){
-    this.service
+    this.serviceClientes
       .listar()
-      .subscribe(response => {
-         this.clientes = response;
-         console.log(response);
+      .subscribe(resp => {
+         this.clientes = resp;
+        //  console.log(response);
       });
   }
 
